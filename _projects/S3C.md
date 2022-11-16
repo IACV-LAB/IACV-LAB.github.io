@@ -1,9 +1,9 @@
 ---
 layout: page
-title: project 2
-description: a project with a background image
-img: assets/img/3.jpg
-importance: 2
+title: S3C
+description: Self-Supervised Stochastic Classifiers for Few-Shot Class-Incremental Learning
+img: assets/img/s3c_thumbnail.png
+importance: 1
 category: work
 ---
 

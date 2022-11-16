@@ -1,10 +1,10 @@
-<!-- ---
+---
 layout: page
-title: project 4
-description: another without an image
-img:
-importance: 3
-category: fun
+title: S3C
+description: Self-Supervised Stochastic Classifiers for Few-Shot Class-Incremental Learning
+img: assets/img/s3c_thumbnail.png
+importance: 1
+category: work
 ---
 
 Every project has a beautiful feature showcase page.
@@ -77,4 +77,4 @@ Here's the code for the last row of images above:
     </div>
 </div>
 ```
-{% endraw %} -->
+{% endraw %}

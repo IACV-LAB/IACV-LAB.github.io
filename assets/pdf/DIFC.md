@@ -1,9 +1,9 @@
 ---
 layout: page
-title: project 1
-description: a project with a background image
-img: assets/img/12.jpg
-importance: 1
+title: DIFC
+description: Improved Cross-Dataset Facial Expression Recognition by Handling Data Imbalance and Feature Confusion
+img:
+importance: 2
 category: work
 ---
 

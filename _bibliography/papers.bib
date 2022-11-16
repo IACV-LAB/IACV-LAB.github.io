@@ -1,83 +1,118 @@
----
----
 
-@string{aps = {American Physical Society,}}
-
-@book{einstein1956investigations,
-  bibtex_show={true},
-  title={Investigations on the Theory of the Brownian Movement},
-  author={Einstein, Albert},
-  year={1956},
-  publisher={Courier Corporation,},
-  preview={brownian-motion.gif}
+@article{10.1007/978-3-031-19806-9_25,
+abbr={ECCV},
+author="Kalla, Jayateja
+and Biswas, Soma",
+editor="Avidan, Shai
+and Brostow, Gabriel
+and Ciss{\'e}, Moustapha
+and Farinella, Giovanni Maria
+and Hassner, Tal",
+title="S3C: Self-Supervised Stochastic Classifiers for Few-Shot Class-Incremental Learning",
+booktitle="Computer Vision -- ECCV 2022",
+year="2022",
+publisher="Springer Nature Switzerland",
+address="Cham",
+pages="432--448",
+abstract="Few-shot class-incremental learning (FSCIL) aims to learn progressively about new classes with very few labeled samples, without forgetting the knowledge of already learnt classes. FSCIL suffers from two major challenges: (i) over-fitting on the new classes due to limited amount of data, (ii) catastrophically forgetting about the old classes due to unavailability of data from these classes in the incremental stages. In this work, we propose a self-supervised stochastic classifier (S3C) (code: https://github.com/JAYATEJAK/S3C) to counter both these challenges in FSCIL. The stochasticity of the classifier weights (or class prototypes) not only mitigates the adverse effect of absence of large number of samples of the new classes, but also the absence of samples from previously learnt classes during the incremental steps. This is complemented by the self-supervision component, which helps to learn features from the base classes which generalize well to unseen classes that are encountered in future, thus reducing catastrophic forgetting. Extensive evaluation on three benchmark datasets using multiple evaluation metrics show the effectiveness of the proposed framework. We also experiment on two additional realistic scenarios of FSCIL, namely where the number of annotated data available for each of the new classes can be different, and also where the number of base classes is much lesser, and show that the proposed S3C performs significantly better than the state-of-the-art for all these challenging scenarios.",
+isbn="978-3-031-19806-9",
+url={http://link.aps.org/doi/10.1103/PhysRev.47.777},
+html={https://iacv-lab.github.io/projects/S3C/},
+pdf={s3c_eccv.pdf},
+selected={true}
 }
 
-@article{einstein1950meaning,
-  abbr={AJP},
-  bibtex_show={true},
-  title={The meaning of relativity},
-  author={Einstein, Albert and Taub, AH},
-  journal={American Journal of Physics,},
-  volume={18},
-  number={6},
-  pages={403--404},
-  year={1950},
-  publisher={American Association of Physics Teachers,}
+@article{10.1007/978-3-031-19806-9_25,
+abbr={ECCVW},
+author="Sreenivas, Manogna
+and Biswas, Soma",
+title="Improved Cross-Dataset Facial Expression Recognition by Handling Data Imbalance and Feature Confusion",
+booktitle="Computer Vision -- ECCVW 2022",
+year="2022",
+publisher="Springer Nature Switzerland",
+address="Cham",
+pages="432--448",
+abstract="Facial Expression Recognition (FER) models trained on one dataset (source) usually do not perform well on a different dataset (tar- get) due to the implicit domain shift between different datasets. In ad- dition, FER data is naturally highly imbalanced, with a majority of the samples belonging to few expressions like neutral, happy and rel- atively fewer samples coming from expressions like disgust, fear, etc., which makes the FER task even more challenging. This class imbalance of the source and target data (which may be different), along with other factors like similarity of few expressions, etc., can result in unsatisfactory target classification performance due to confusion between the different classes. In this work, we propose an integrated module, termed DIFC, which can not only handle the source Data Imbalance, but also the Feature Confusion of the target data for improved classification of the target expressions.We integrate this DIFC module with an existing Un- supervised Domain Adaptation (UDA) approach to handle the domain shift and show that the proposed simple yet effective module can result in significant performance improvement on four benchmark datasets for Cross-Dataset FER (CD-FER) task. We also show that the proposed module works across different architectures and can be used with other UDA baselines to further boost their performance.
+",
+isbn="978-3-031-19806-9",
+url={http://link.aps.org/doi/10.1103/PhysRev.47.777},
+html={https://iacv-lab.github.io/projects/DIFC/},
+pdf={DIFC_WCPA_ECCVW'22.pdf},
+selected={false}
 }
 
-@article{PhysRev.47.777,
-  abbr={PhysRev},
-  title={Can Quantum-Mechanical Description of Physical Reality Be Considered Complete?},
-  author={Einstein, A. and Podolsky, B. and Rosen, N.},
-  abstract={In a complete theory there is an element corresponding to each element of reality. A sufficient condition for the reality of a physical quantity is the possibility of predicting it with certainty, without disturbing the system. In quantum mechanics in the case of two physical quantities described by non-commuting operators, the knowledge of one precludes the knowledge of the other. Then either (1) the description of reality given by the wave function in quantum mechanics is not complete or (2) these two quantities cannot have simultaneous reality. Consideration of the problem of making predictions concerning a system on the basis of measurements made on another system that had previously interacted with it leads to the result that if (1) is false then (2) is also false. One is thus led to conclude that the description of reality as given by a wave function is not complete.},
-  journal={Phys. Rev.,},
-  volume={47},
-  issue={10},
-  pages={777--780},
-  numpages={0},
-  year={1935},
-  month={May},
-  publisher=aps,
-  doi={10.1103/PhysRev.47.777},
-  url={http://link.aps.org/doi/10.1103/PhysRev.47.777},
-  html={https://journals.aps.org/pr/abstract/10.1103/PhysRev.47.777},
-  pdf={example_pdf.pdf},
-  altmetric={248277},
-  selected={true}
+
+@inproceedings{10.1145/3490035.3490303,
+abbr={ICVGIP},
+author = {Arfeen, Ahmad and Dutta, Titir and Biswas, Soma},
+title = {Selective Mixing and Voting Network for Semi-Supervised Domain Generalization},
+year = {2021},
+isbn = {9781450375962},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/3490035.3490303},
+doi = {10.1145/3490035.3490303},
+abstract = {Domain generalization (DG) addresses the problem of generalizing classification performance across any unknown domain, by leveraging training samples from multiple source domains. Currently, the training process of the state-of-the-art DG-methods is dependent on a large amount of labeled data. This restricts the application of the models in many real-world scenarios, where collecting and annotating a large dataset is an expensive and difficult task. Thus, in this paper, we address the problem of Semi-supervised Domain Generalization (SSDG), where the training set contains only a few labeled data, in addition to a large number of unlabeled data from multiple domains. This is relatively unexplored in literature and poses a considerable challenge to the state-of-the-art DG models, since their performance degrades under such condition. To address this scenario, we propose a novel Selective Mixing and Voting Network (SMV-Net), which effectively extracts useful knowledge from the set of unlabeled training data, available to the model. Specifically, we propose a mixing strategy on selected unlabeled samples on which the model is confident about their predicted class labels to achieve a domain-invariant representation of the data, which generalizes effectively across any unseen domain. Secondly, we also propose a voting module, which not only improves the generalization capability of the classifier, but can also comment on the prediction of the test samples, using references from a few labeled training examples, despite of their domain gap. Finally, we introduce a test-time mixing strategy to re-look at the top class-predictions and re-order them if required to further boost the classification performance. Extensive experiments on two popular DG-datasets demonstrate the usefulness of the proposed framework.},
+booktitle = {Proceedings of the Twelfth Indian Conference on Computer Vision, Graphics and Image Processing},
+articleno = {44},
+numpages = {9},
+keywords = {semi-supervised learning, domain generalization, mix-up strategy},
+location = {Jodhpur, India},
+series = {ICVGIP '21}
 }
 
-@article{einstein1905molekularkinetischen,
-  title={{\"U}ber die von der molekularkinetischen Theorie der W{\"a}rme geforderte Bewegung von in ruhenden Fl{\"u}ssigkeiten suspendierten Teilchen},
-  author={Einstein, A.},
-  journal={Annalen der physik,},
-  volume={322},
-  number={8},
-  pages={549--560},
-  year={1905},
-  publisher={Wiley Online Library}
+
+@inproceedings{10.1145/3490035.3490304,
+abbr={ICVGIP},
+author = {Goyal, Anik and Biswas, Soma},
+title = {Few-Shot Classification without Forgetting of Event-Camera Data},
+year = {2021},
+isbn = {9781450375962},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/3490035.3490304},
+doi = {10.1145/3490035.3490304},
+abstract = {Event-based cameras can capture changes in brightness in the form of asynchronous events, unlike traditional cameras, which has sparked tremendous interest due to their wide range of applications. In this work, we address for the first time in literature, the task of few-shot classification of event data without forgetting the base classes on which it has been initially trained. This not only relaxes the constraint of data availability from all possible classes before the initial model is trained, but also the constraint of capturing large amounts of training data for each of the classes we want to classify. The proposed framework has three main stages: First, we train the base classifier by augmenting the original event data using a data mixing technique, so that the feature extractor can better generalize to unseen classes. We also utilize an adaptive semantic similarity between the classifier weights. This guarantees that the margin between similar classes is greater than that between dissimilar classes which in turn reduces confusion between similar classes. Second, weight imprinting is employed to learn the initial classifier weights for the new classes with few examples. Finally, we finetune the entire framework using a class-imbalance aware loss in an end-to-end manner. This is accomplished by converting the event data via a series of differentiable operations, which are then fed into our network. Extensive experiments on few-shot versions of two standard event-camera datasets justify the effectiveness of the proposed framework. We believe that this study will serve as a solid foundation for future work in this critical field.},
+booktitle = {Proceedings of the Twelfth Indian Conference on Computer Vision, Graphics and Image Processing},
+articleno = {45},
+numpages = {8},
+keywords = {event-based camera, mixup, weight imprinting, adaptive semantic similarity, class-imbalance aware loss},
+location = {Jodhpur, India},
+series = {ICVGIP '21}
 }
 
-@article{einstein1905movement,
-  abbr={Ann. Phys.},
-  title={Un the movement of small particles suspended in statiunary liquids required by the molecular-kinetic theory 0f heat},
-  author={Einstein, A.},
-  journal={Ann. Phys.,},
-  volume={17},
-  pages={549--560},
-  year={1905}
+@inproceedings{10.1145/3490035.3490262,
+abbr={ICVGIP},
+author = {Bansal, Rahul and Biswas, Soma},
+title = {CT-DANN: Co-Teaching Meets DANN for Wild Unsupervised Domain Adaptation},
+year = {2021},
+isbn = {9781450375962},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/3490035.3490262},
+doi = {10.1145/3490035.3490262},
+abstract = {Unsupervised domain adaptation aims at leveraging supervision from an annotated source domain for performing tasks like classification/segmentation on an unsupervised target domain. However, a large enough related dataset with clean annotations may not be always available in real scenarios, since annotations are usually obtained from crowd sourcing, and thus are noisy. Here, we consider a more realistic and challenging setting, wild unsupervised domain adaptation (WUDA), where the source domain annotations can be noisy. Standard domain adaptation approaches which directly use these noisy source labels and the unlabeled targets for the domain adaptation task perform poorly, due to severe negative transfer from the noisy source domain. In this work, we propose a novel end-to-end framework, termed CT-DANN (Co-teaching meets DANN), which seamlessly integrates a state-of-the-art approach for handling noisy labels (Co-teaching) with a standard domain adaptation framework (DANN). CT-DANN effectively utilizes all the source samples after accounting for both their noisy labels as well as transferability with respect to the target domain. Extensive experiments on three benchmark datasets with different types and levels of noise and comparison with state-of-the-art WUDA approach justify the effectiveness of the proposed framework.},
+booktitle = {Proceedings of the Twelfth Indian Conference on Computer Vision, Graphics and Image Processing},
+articleno = {5},
+numpages = {8},
+keywords = {noisy source data, source data weighting, wild unsupervised domain adaptation, co-teaching},
+location = {Jodhpur, India},
+series = {ICVGIP '21}
 }
 
-@article{einstein1905electrodynamics,
-  title={On the electrodynamics of moving bodies},
-  author={Einstein, A.},
-  year={1905}
+@article{PAMBALA202193,
+abbr={PRL},
+title = {SML: Semantic meta-learning for few-shot semantic segmentation☆},
+journal = {Pattern Recognition Letters},
+volume = {147},
+pages = {93-99},
+year = {2021},
+issn = {0167-8655},
+doi = {https://doi.org/10.1016/j.patrec.2021.03.036},
+url = {https://www.sciencedirect.com/science/article/pii/S0167865521001318},
+author = {Ayyappa Kumar Pambala and Titir Dutta and Soma Biswas},
+keywords = {Few-shot learning, Semantic segmentation, Attributes},
+abstract = {The significant amount of training data required for training Convolutional Neural Networks has become a bottleneck for applications like semantic segmentation. Few-shot semantic segmentation algorithms address this problem, with an aim to achieve good performance in the low-data regime, with few annotated training images. Recent approaches based on class-prototypes computed from available training data have achieved immense success for this task. In this work, we propose a novel meta-learning framework, Semantic Meta-Learning (SML), which incorporates class level semantic descriptions in the generated prototypes for this problem. In addition, we propose to use the well-established technique, ridge regression, to not only bring in the class-level semantic information, but also to effectively utilise the information available from multiple images present in the training data for prototype computation. This has a simple closed-form solution, and thus can be implemented easily and efficiently. Extensive experiments on the benchmark PASCAL-5i dataset under different experimental settings demonstrate the effectiveness of the proposed framework.}
 }
 
-@book{przibram1967letters,
-  bibtex_show={true},
-  title={Letters on wave mechanics},
-  author={Einstein, Albert and Schrödinger, Erwin and Planck, Max and Lorentz, Hendrik Antoon and Przibram, Karl},
-  year={1967},
-  publisher={Vision},
-  preview={wave-mechanics.gif}
-}
+

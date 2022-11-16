@@ -1,10 +1,9 @@
 ---
 layout: page
-title: project 3
-description: a project that redirects to another website
-img: assets/img/7.jpg
-redirect: https://unsplash.com
-importance: 3
+title: DIFC
+description: Improved Cross-Dataset Facial Expression Recognition by Handling Data Imbalance and Feature Confusion
+img:
+importance: 2
 category: work
 ---
 
