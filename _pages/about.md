@@ -14,9 +14,16 @@ subtitle: C314, Department of Electrical Engineering, IISc, Bangalore. #<a href=
 #     <p>Your City, State 12345</p>
 
 news: true  # includes a list of news items
-selected_papers: true # includes a list of papers marked as "selected={true}"
-social: true  # includes social icons at the bottom of the page
+selected_papers: false # includes a list of papers marked as "selected={true}"
+social: false  # includes social icons at the bottom of the page
 ---
 
-Write your biography here. Tell the world about yourself. 
+In the IACV Lab, we work on a variety of exciting Computer Vision problems. Some of the current areas of interest are 
+* Incremental learning
+* Cross-Modal learning
+* Domain Adaptation and Generalization
+* Novel Class Discovery
+* Test-time adaptation
+* Data efficient learning
+
 

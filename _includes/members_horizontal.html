@@ -1,0 +1,52 @@
+{% if project.redirect -%}
+<a href="{{ project.redirect }}">
+{%- endif %}
+<div class="card hoverable">
+  <div class="row row-cols-2">
+    <div class="col-sm-4 col-md-9">
+      {%- if project.img %}
+      {%- include figure.html path=project.img alt="project thumbnail" -%}
+      {%- endif %}
+    </div>
+      <div class="card-body">
+        <a href="{{ project.url | relative_url }}">
+        <h5 class="card-title">{{ project.title }}</h5>
+        <h6 class="card-subtitle mb-2 text-muted">{{ project.position }}</h6>
+        <h6 class="card-subtitle mb-2 text-muted">{{ project.joining }}</h6>
+        <p class="card-text">
+            {{ project.description }}
+        </p>
+        </a>
+        {%- if project.mail -%}
+        <a href="mailto:{{ project.mail }}" class="card-link"><i class="fas fa-envelope"></i></a>
+        {%- endif %}
+        {%- if project.scholar -%}
+        <a href="{{ project.scholar }}" class="card-link"><i class="fab fa-google"></i></a>
+        {%- endif %}
+        {%- if project.orcid -%}
+        <a href="{{ project.orcid }}" class="card-link"><i class="fab fa-orcid"></i></a>
+        {%- endif %}
+        {%- if project.linkedin -%}
+        <a href="{{ project.linkedin }}" class="card-link"><i class="fab fa-linkedin"></i></a>
+        {%- endif %}
+        {%- if project.twitter -%}
+        <a href="{{ project.twitter }}" class="card-link"><i class="fab fa-twitter"></i></a>
+        {%- endif %}
+        {%- if project.github -%}
+        <a href="{{ project.github }}" class="card-link"><i class="fab fa-github"></i></a>
+        {%- endif %}
+        {%- if project.youtube -%}
+        <a href="{{ project.youtube }}" class="card-link"><i class="fab fa-youtube"></i></a>
+        {%- endif %}
+        {%- if project.webpage -%}
+        <a href="{{ project.webpage }}" class="card-link"><i class="fa fa-globe"></i></a>
+        {%- endif %}
+
+        <p class="card-text">
+          {%- if project.address%}
+          <small class="test-muted"><i class="fas fa-thumbtack"></i> {{ project.address }} </small>
+          {%- endif%}
+        </p>
+      </div>
+  </div>
+</div>
